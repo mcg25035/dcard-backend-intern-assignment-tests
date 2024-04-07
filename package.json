@@ -5,7 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/register",
+    "test1": "mocha './test/test1' --require @babel/register",
+    "test2": "mocha './test/test2' --require @babel/register",
+    "test3": "mocha './test/test3' --require @babel/register",
+    "stressTest": "node ./testStress/testStress.mjs",
     "build": "babel src -d dist --presets=@babel/preset-env"
   },
   "author": "",
@@ -21,6 +24,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.24.3",
     "@babel/register": "^7.23.7",
+    "axios": "^1.6.8",
     "chai": "^5.1.0",
     "chai-http": "^4.4.0",
     "mocha": "^10.4.0",

@@ -108,6 +108,9 @@ export class Ad{
 	    		}
 	    	}
             if (conditions.length == 0) validAd = true;
+            // var now = new Date();
+            // var isTimeValid = ad.startAt <= now && now <= ad.endAt;
+            // if (!isTimeValid) validAd = false;
 	    	if (validAd && !result.includes(ad.id)) {
 	    		result.push(ad.getAsApiResponse());
 	    	}

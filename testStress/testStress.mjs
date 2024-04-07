@@ -51,7 +51,7 @@ function updateResult() {
 }
 
 const workerCount = 2; 
-const requestsPerWorker = 5000; 
+const requestsPerWorker = 3000; 
 
 setInterval(() => {
     updateResult();
